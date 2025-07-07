@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manoj Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Manoj Kumar</h1>
+    <p>DevOps Enthusiast | Manual Tester | Docker | Terraform</p>
+    <p><a href="Certificate.html">View My Certificates & Marksheets →</a></p>
+  </header>
+
+  <section id="Education" class="fade-in">
+    <h2>Education</h2>
+    <ul>
+    <li>
+  <strong>B.Tech – Computer Science</strong> – Swami Vivekanand Institute Of Technology & Management, Haryana<br />
+  <strong>2017–2021</strong><br />
+  <strong>CGPA:</strong> 7.41
+</li>
+<li>
+  <strong>PUC – Loyola PU College</strong> – Karnataka State Board<br />
+  <strong>2015–2017</strong><br />
+  <strong>Percentage:</strong> 43%
+</li>
+<li>
+  <strong>10th – Loyola High School</strong> – Karnataka Secondary Education Examination Board<br />
+  <strong>2014–2015</strong><br />
+  <strong>Percentage:</strong> 57%
+</li>
+    </ul>
+    <h2>Cources & Certification</h2>
+    <ul>
+      <li>
+        <strong>DevOps Aws Course</strong> - Joctopus<br />
+        <strong>2025(February-April)</strong><br />    
+  </section>
+
+  <section id="projects" class="fade-in">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>HeavenOnMyEarth.com</h3>
+    <p><em><strong>Freelance Project – (Sep-2024 to Oct-2024)</strong></em></p>
+    <p>A freelance website built for a client in the wellness and meditation space.</p>
+    <ul>
+      <li>Built using Elementor and OptimizePress for modern layout and landing pages</li>
+      <li>Designed custom funnels to guide visitors toward service bookings and email signups</li>
+      <li>Implemented a clean, image-rich gallery to showcase client’s sessions and retreats</li>
+      <li>Integrated a secure client-provided payment gateway for online transactions</li>
+      <li>Ensured mobile responsiveness, performance optimization, and SEO basics</li>
+      <li>Managed hosting setup and deployment via cPanel</li>
+    </ul>
+    <p><strong>Tech & Tools Used:</strong> WordPress, Elementor, OptimizePress, Payment Gateway Integration, Funnels, Gallery Module, cPanel, FileZilla</p>
+    <a href="https://www.heavenonmyearth.com" target="_blank">Visit Website</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Train Ticket Booking App</h3>
+    <p><em><strong>Personal Project – (April-2025)</strong></em></p>
+    <p>A Python + Docker-based UI app to simulate train ticket bookings with basic web interface and Dockerized backend.</p>
+    <ul>
+      <li>Created a minimal HTML UI for booking simulation</li>
+      <li>Dockerized the app for portable deployment</li>
+      <li>Used Git Bash and GitHub for version control and testing</li>
+    </ul>
+    <p><strong>Tech Used:</strong> Python, HTML, Docker, Git Bash</p>
+  </div>
+
+  <div class="project-card">
+    <h3>API Testing Practice</h3>
+    <p><em><strong>Learning Project – (April-2025)</strong></em></p>
+    <p>Practiced creating and testing APIs using Postman and AWS monitoring tools.</p>
+    <ul>
+      <li>Designed and executed GET/POST requests with JSON data</li>
+      <li>Monitored API logs and metrics using AWS CloudWatch</li>
+      <li>Tested automation triggers using basic AWS alarms</li>
+    </ul>
+    <p><strong>Tech Used:</strong> REST APIs, JSON, AWS CloudWatch, AWS Monitoring Tools</p>
+  </div>
+</section>
+
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <ul>
+      <li>Manual Testing (Functional, UI)</li>
+      <li>Docker, Git Bash, GitHub</li>
+      <li>Terraform, Kubernetes (Basics)</li>
+      <li>Python (Scripting Basics)</li>
+      <li>Selenium, TestLink, Jira (Self-learned)</li>
+      <li>Linux Commands, Bash Scripting</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="fade-in contact-section">
+  <h2>Contact Me</h2>
+  <div class="contact-box">
+    <p><strong>📞 Phone:</strong> 7406677130</p>
+    <p><strong>📧 Email:</strong> <a href="mailto:Vadlamudi.manojkumar.l@gmail.com">Vadlamudi.manojkumar.l@gmail.com</a></p>
+    <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/manoj-kumar-l-60900a34b" target="_blank">My Profile</a></p>
+    <p><strong>👨‍💻 GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Manoj Kumar</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -100px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>
