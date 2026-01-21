@@ -1,174 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Manoj Kumar | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manoj Kumar | DevOps & Testing Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-  <header>
-    <h1>Manoj Kumar</h1>
-    <p>DevOps Enthusiast | Manual Tester | Docker | Terraform</p>
+  <!-- Header -->
+  <header id="home">
+    <div class="header-content">
+      <h1>Manoj Kumar</h1>
+      <p class="subtitle">DevOps Enthusiast | Manual Tester | Docker | Terraform</p>
+      <div class="header-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
   </header>
 
-  <section id="Education" class="fade-in">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <strong>B.Tech – Computer Science</strong> – Swami Vivekanand Institute Of Technology & Management, Haryana<br />
-        <strong>2017–2021</strong><br />
-        <strong>CGPA:</strong> 7.41<br />
-        <a href="files/B-Tect Marksheet.pdf" target="_blank">📄 View Marksheet</a>
-      </li>
+  <!-- Education Section -->
+  <section id="Education" class="section fade-in">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="cards-container">
+      <div class="card education-card">
+        <div class="card-header">
+          <h3>B.Tech – Computer Science</h3>
+          <span class="date">2017–2021</span>
+        </div>
+        <div class="card-body">
+          <p><strong>Swami Vivekanand Institute Of Technology & Management, Haryana</strong></p>
+          <p><strong>CGPA: 7.41</strong></p>
+        </div>
+        <div class="card-footer">
+          <a href="files/B-Tect Marksheet.pdf" target="_blank" class="btn btn-sm btn-primary">
+            <i class="fas fa-file-pdf"></i> View Marksheet
+          </a>
+        </div>
+      </div>
 
-      <li>
-        <strong>PUC – Loyola PU College</strong> – Karnataka State Board<br />
-        <strong>2015–2017</strong><br />
-        <strong>Percentage:</strong> 43%<br />
-        <a href="files/PU Marksheet.pdf" target="_blank">📄 View Marksheet</a>
-      </li>
+      <div class="card education-card">
+        <div class="card-header">
+          <h3>PUC – Loyola PU College</h3>
+          <span class="date">2015–2017</span>
+        </div>
+        <div class="card-body">
+          <p><strong>Karnataka State Board</strong></p>
+          <p><strong>Percentage: 43%</strong></p>
+        </div>
+        <div class="card-footer">
+          <a href="files/PU Marksheet.pdf" target="_blank" class="btn btn-sm btn-primary">
+            <i class="fas fa-file-pdf"></i> View Marksheet
+          </a>
+        </div>
+      </div>
 
-      <li>
-        <strong>10th – Loyola High School</strong> – Karnataka Secondary Education Examination Board<br />
-        <strong>2014–2015</strong><br />
-        <strong>Percentage:</strong> 57%<br />
-        <a href="files/10th Marksheet.pdf" target="_blank">📄 View Marksheet</a>
-      </li>
-    </ul>
-
-    <h2>Cources & Certification</h2>
-    <ul>
-      <li>
-        <strong>DevOps Aws Course</strong> - Joctopus<br />
-        <strong>2025 (February–April)</strong>
-      </li>
-    </ul>
-  </section>
-
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-      <h3>HeavenOnMyEarth.com</h3>
-      <p><em><strong>Freelance Project</strong></em></p>
-      <p>A freelance website built for a client in the wellness and meditation space.</p>
-      <ul>
-        <li>Built using Elementor and OptimizePress for modern layout and landing pages</li>
-        <li>Designed custom funnels to guide visitors toward service bookings and email signups</li>
-        <li>Implemented an image-rich gallery for retreats and sessions</li>
-        <li>Integrated a secure client-provided payment gateway</li>
-        <li>Handled deployment and hosting via cPanel</li>
-      </ul>
-      <p><strong>Tech & Tools Used:</strong> WordPress, Elementor, OptimizePress, Payment Gateway, cPanel</p>
-      <a href="https://www.heavenonmyearth.com" target="_blank">Visit Website</a>
+      <div class="card education-card">
+        <div class="card-header">
+          <h3>10th – Loyola High School</h3>
+          <span class="date">2014–2015</span>
+        </div>
+        <div class="card-body">
+          <p><strong>Karnataka Secondary Education Examination Board</strong></p>
+          <p><strong>Percentage: 57%</strong></p>
+        </div>
+        <div class="card-footer">
+          <a href="files/10th Marksheet.pdf" target="_blank" class="btn btn-sm btn-primary">
+            <i class="fas fa-file-pdf"></i> View Marksheet
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <h3>Train Ticket Booking App</h3>
-      <p><em><strong>Personal Project – April 2025</strong></em></p>
-      <p>A Dockerized Python-based UI app simulating a train ticket booking system.</p>
-      <ul>
-        <li>Designed a basic booking UI using HTML</li>
-        <li>Dockerized the application for portability</li>
-        <li>Used GitHub and Git Bash for version control</li>
-      </ul>
-      <p><strong>Tech Used:</strong> Python, HTML, Docker, Git</p>
-    </div>
-
-    <div class="project-card">
-      <h3>API Testing Practice</h3>
-      <p><em><strong>Learning Project – April 2025</strong></em></p>
-      <p>Hands-on practice project focused on API testing and monitoring.</p>
-      <ul>
-        <li>Executed REST API requests using Postman</li>
-        <li>Validated responses and error handling</li>
-        <li>Monitored logs and metrics using AWS CloudWatch</li>
-      </ul>
-      <p><strong>Tech Used:</strong> REST APIs, JSON, Postman, AWS CloudWatch</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p><strong>Personal Project – July 2025</strong></p>
-      <p>Designed and deployed a responsive portfolio website to showcase projects and skills.</p>
-      <ul>
-        <li>Built with HTML, CSS, and JavaScript</li>
-        <li>Implemented scroll-based animations</li>
-        <li>Tested responsiveness across devices</li>
-        <li>Deployed using GitHub Pages</li>
-      </ul>
-      <p><strong>Tech & Tools Used:</strong> HTML, CSS, JavaScript, GitHub Pages</p>
-      <a href="https://manojkumarvadlamudi.github.io/Portfolio-Website/" target="_blank">View Live</a>
-    </div>
-
-    <!-- angular project -->
-    <div class="project-card">
-      <h3>Angular Mini E-Commerce (MiniStore)</h3>
-      <p><strong>Personal Project – January 2026</strong></p>
-      <p>
-        A fully functional Angular-based mini e-commerce application featuring product listing,
-        dynamic cart management, and a polished checkout experience.
-      </p>
-      <ul>
-        <li>Developed using Angular standalone components and routing</li>
-        <li>Implemented cart state management using Angular services</li>
-        <li>Designed a slide-out cart panel with real-time quantity updates</li>
-        <li>Built a complete checkout page with order summary and empty-cart handling</li>
-        <li>Polished UI with animations, shadows, and responsive layouts</li>
-        <li>Debugged and resolved Angular template and module errors</li>
-      </ul>
-      <p>
-        <strong>Tech & Tools Used:</strong>
-        Angular, TypeScript, HTML5, CSS3, Angular Router, GitHub
-      </p>
-    </div>
-
-  </section>
-
-  <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <ul>
-      <li>Manual Testing (Functional, UI)</li>
-      <li>Docker, Git Bash, GitHub</li>
-      <li>Terraform, Kubernetes (Basics)</li>
-      <li>Python (Scripting Basics)</li>
-      <li>Selenium, TestLink, Jira (Self-learned)</li>
-      <li>Linux Commands, Bash Scripting</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="fade-in contact-section">
-    <h2>Contact Me</h2>
-    <div class="contact-box">
-      <p><strong>📞 Phone:</strong> 7406677130</p>
-      <p><strong>📧 Email:</strong> <a href="mailto:Vadlamudi.manojkumar.l@gmail.com">Vadlamudi.manojkumar.l@gmail.com</a></p>
-      <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/manoj-kumar-l-60900a34b" target="_blank">My Profile</a></p>
-      <p><strong>👨‍💻 GitHub:</strong> <a href="https://github.com/manojkumarvadlamudi" target="_blank">manojkumarvadlamudi</a></p>
+    <div class="certification-card">
+      <h3><i class="fas fa-certificate"></i> Courses & Certification</h3>
+      <div class="card">
+        <div class="card-body">
+          <h4>DevOps AWS Course - Joctopus</h4>
+          <p><strong>2025 (February–April)</strong></p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="section fade-in">
+    <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+    <div class="cards-container">
+      <div class="card project-card">
+        <div class="card-header">
+          <i class="fas fa-globe"></i>
+          <h3>HeavenOnMyEarth.com</h3>
+          <span class="project-badge">Freelance</span>
+        </div>
+        <div class="card-body">
+          <p>A freelance website for wellness and meditation services with custom funnels and payment integration.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> WordPress + Elementor + OptimizePress</li>
+            <li><i class="fas fa-check"></i> Custom booking funnels & galleries</li>
+            <li><i class="fas fa-check"></i> Payment gateway & cPanel deployment</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="https://www.heavenonmyearth.com" target="_blank" class="btn btn-primary">
+            <i class="fas fa-external-link-alt"></i> Visit Live
+          </a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <div class="card-header">
+          <i class="fas fa-train"></i>
+          <h3>Train Ticket Booking App</h3>
+          <span class="project-badge">Apr 2025</span>
+        </div>
+        <div class="card-body">
+          <p>Dockerized Python UI app for train ticket booking simulation.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Python + HTML + Docker</li>
+            <li><i class="fas fa-check"></i> GitHub version control</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <div class="card-header">
+          <i class="fas fa-server"></i>
+          <h3>Angular Mini E-Commerce (MiniStore)</h3>
+          <span class="project-badge">Jan 2026</span>
+        </div>
+        <div class="card-body">
+          <p>Fully functional Angular e-commerce with cart management and checkout.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Angular standalone components</li>
+            <li><i class="fas fa-check"></i> Cart state management</li>
+            <li><i class="fas fa-check"></i> Responsive animations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <div class="card-header">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Portfolio Website</h3>
+          <span class="project-badge">Jul 2025</span>
+        </div>
+        <div class="card-body">
+          <p>Responsive portfolio with scroll animations deployed on GitHub Pages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section fade-in">
+    <h2><i class="fas fa-tools"></i> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <i class="fas fa-bug"></i>
+        <h4>Manual Testing</h4>
+        <p>Functional & UI Testing</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-docker"></i>
+        <h4>Docker</h4>
+        <p>Containerization</p>
+      </div>
+      <div class="skill-item">
+        <i class="fas fa-cube"></i>
+        <h4>Terraform</h4>
+        <p>Infrastructure as Code</p>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-python"></i>
+        <h4>Python</h4>
+        <p>Scripting & Automation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section fade-in contact-section">
+    <h2><i class="fas fa-address-book"></i> Contact Me</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>7406677130</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:Vadlamudi.manojkumar.l@gmail.com">Vadlamudi.manojkumar.l@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-card social-links">
+        <a href="https://www.linkedin.com/in/manoj-kumar-l-60900a34b" target="_blank" class="btn btn-secondary">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/manojkumarvadlamudi" target="_blank" class="btn btn-secondary">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Manoj Kumar</p>
+    <p><i class="fas fa-heart"></i> © 2026 Manoj Kumar. Built with passion.</p>
   </footer>
 
-  <script>
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -100px 0px" };
-
-    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => appearOnScroll.observe(fader));
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
-
-
