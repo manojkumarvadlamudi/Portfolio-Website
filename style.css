@@ -14,192 +14,128 @@ body {
   padding: 20px;
 }
 
-/* ===== Header ===== */
+/* ===== Header / Top Bar ===== */
 header {
-  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  backdrop-filter: blur(10px);
   color: #fff;
   text-align: center;
-  padding: 30px 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 22px 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.3rem;
+  margin-bottom: 6px;
 }
 
 header p {
-  font-size: 1.1rem;
-  margin: 6px 0;
+  font-size: 1rem;
+  opacity: 0.95;
 }
 
 header a {
   color: #fff;
-  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
 }
 
 header a:hover {
   text-decoration: underline;
 }
 
-/* ===== Section ===== */
+/* ===== Main Sections ===== */
 section {
-  max-width: 900px;
+  max-width: 960px;
   margin: 40px auto;
   background: #ffffff;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   color: #7b2cbf;
+  font-weight: 700;
   border-left: 5px solid #c77dff;
   padding-left: 12px;
-  font-weight: 700;
 }
 
-/* Remove left border from specific headers */
-.no-border {
-  border-left: none;
-  padding-left: 0;
-  text-align: center;
-}
-
-/* ===== Marksheet Cards ===== */
+/* ===== Lists / Cards ===== */
 ul {
-  list-style-type: none;
-  padding-left: 0;
+  list-style: none;
 }
 
 ul li {
   background: #f3e8ff;
-  margin-bottom: 20px;
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #e0b3ff;
-  transition: all 0.3s ease;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  border: 1px solid #e4c7ff;
+  transition: all 0.25s ease;
 }
 
 ul li:hover {
-  transform: translateY(-3px);
-  background: #e8d4ff;
+  transform: translateY(-4px);
+  background: #ead8ff;
 }
 
 ul li strong {
-  font-size: 1.1rem;
   color: #7b2cbf;
+  font-size: 1.05rem;
 }
 
-ul li em {
-  display: block;
-  color: #555;
-  margin-top: 8px;
-}
-
-ul li a {
-  display: inline-block;
-  margin-top: 12px;
+/* ===== Buttons ===== */
+button,
+a.button {
   background: #c77dff;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
 }
 
-ul li a:hover {
+button:hover,
+a.button:hover {
   background: #a855f7;
+  transform: scale(1.05);
 }
 
-/* ===== Footer ===== */
-footer {
-  margin-top: 40px;
-  text-align: center;
-  color: #777;
-  font-size: 0.9rem;
-  padding: 20px;
-}
-
-/* === Projects Section Improvements === */
-#projects {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-#projects h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #7b2cbf;
-  text-align: center;
-  border-left: none;
-  padding-left: 0;
-}
-
+/* ===== Project Cards ===== */
 .project-card {
-  background: #f5edff;
+  background: #f6eeff;
   border-left: 6px solid #c77dff;
-  margin-bottom: 40px;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  padding: 26px;
+  margin-bottom: 36px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  position: relative;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
 }
 
 .project-card h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
   font-size: 1.4rem;
-  color: #444;
-}
-
-.project-card p,
-.project-card ul {
-  margin-bottom: 12px;
-  line-height: 1.6;
-  color: #333;
-}
-
-.project-card ul {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #c77dff;
-  color: #fff;
-  padding: 8px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.project-card a:hover {
-  background-color: #a855f7;
+  margin-bottom: 10px;
 }
 
 .project-card strong {
   display: inline-block;
-  background: #c77dff1a;
-  color: #7b2cbf;
-  padding: 6px 10px;
-  border-radius: 5px;
-  font-weight: 600;
   margin-top: 10px;
+  padding: 6px 12px;
+  background: #efe0ff;
+  color: #7b2cbf;
+  border-radius: 6px;
 }
 
 /* ===== Contact Section ===== */
@@ -209,29 +145,26 @@ footer {
 
 .contact-box {
   background: #f3e8ff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-box:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
 
 .contact-box p {
-  margin: 10px 0;
-  font-size: 1.1rem;
+  margin: 8px 0;
+  font-size: 1.05rem;
   color: #5e3370;
 }
 
 .contact-box a {
   color: #7b2cbf;
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.contact-box a:hover {
-  text-decoration: underline;
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
 }
