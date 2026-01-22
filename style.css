@@ -1,4 +1,3 @@
-/* ===== Base Reset ===== */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -15,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== Smaller Header (UPDATED) ===== */
+/* Smaller Header */
 header {
   min-height: 70vh; /* Reduced from 100vh */
   display: flex;
@@ -65,7 +64,7 @@ header {
   to { text-shadow: 0 0 30px #06b6d460; }
 }
 
-/* ===== Buttons ===== */
+/* buttons  */
 .btn {
   padding: 12px 24px;
   border-radius: 12px;
@@ -124,7 +123,7 @@ header {
   font-size: 0.85rem;
 }
 
-/* ===== Sections ===== */
+/* sections */
 .section {
   max-width: 1200px;
   margin: 80px auto;
@@ -146,7 +145,7 @@ h2 {
   gap: 15px;
 }
 
-/* ===== Cards ===== */
+/* Cards */
 .card {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(20px);
@@ -230,7 +229,7 @@ h2 {
 }
 
 .feature-list li {
-  padding: 12px 0; /* INCREASED spacing between lines */
+  padding: 12px 0;
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -262,7 +261,7 @@ h2 {
   gap: 1rem;
 }
 
-/* ===== Skills Grid (UPDATED for 9 cards) ===== */
+/* Skills Grid */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -308,7 +307,7 @@ h2 {
   line-height: 1.5;
 }
 
-/* ===== Education Specific ===== */
+/* Education */
 .education-card {
   max-width: 500px;
   margin: 0 auto 2rem;
@@ -327,7 +326,7 @@ h2 {
   gap: 10px;
 }
 
-/* ===== Contact ===== */
+/* Contact  */
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -368,7 +367,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* ===== Animations ===== */
+/* Animations */
 .fade-in {
   opacity: 0;
   transform: translateY(50px);
@@ -380,7 +379,7 @@ h2 {
   transform: translateY(0);
 }
 
-/* ===== Footer ===== */
+/* Footer */
 footer {
   text-align: center;
   padding: 3rem 2rem;
@@ -393,7 +392,7 @@ footer p {
   color: #94a3b8;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 768px) {
   header {
     min-height: 60vh;
@@ -430,3 +429,4 @@ footer p {
     margin-bottom: 2rem;
   }
 }
+
