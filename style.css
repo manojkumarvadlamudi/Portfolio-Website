@@ -16,7 +16,7 @@ body {
 
 /* Smaller Header */
 header {
-  min-height: 70vh; /* Reduced from 100vh */
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@ header {
 }
 
 .header-content h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem); /* Smaller */
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
   background: linear-gradient(135deg, #3b82f6, #06b6d4, #10b981);
   -webkit-background-clip: text;
@@ -45,7 +45,7 @@ header {
 }
 
 .subtitle {
-  font-size: 1.2rem; /* Slightly smaller */
+  font-size: 1.2rem;
   font-weight: 400;
   opacity: 0.9;
   margin-bottom: 2rem;
@@ -145,14 +145,24 @@ h2 {
   gap: 15px;
 }
 
-/* Cards */
+/* FIXED PROJECTS GRID - Equal Height Cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+/* Cards - FIXED for equal heights */
 .card {
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 20px;
-  padding: 2.5rem;
-  margin-bottom: 2.5rem; /* Added spacing between project cards */
+  padding: 2rem;
+  height: 100%; /* KEY: Makes all cards same height */
+  display: flex;
+  flex-direction: column; /* KEY: Distributes content evenly */
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -179,6 +189,7 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1.5rem;
+  flex-shrink: 0;
 }
 
 .card-header i {
@@ -214,18 +225,23 @@ h2 {
 }
 
 .card-body {
+  flex-grow: 1; /* KEY: Makes body expand to fill space evenly */
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-body p {
   margin-bottom: 1.2rem;
   color: #cbd5e1;
+  flex-grow: 1;
 }
 
 .feature-list {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
 
 .feature-list li {
@@ -254,11 +270,14 @@ h2 {
   border-radius: 10px;
   border-left: 4px solid #3b82f6;
   color: #94a3b8;
+  flex-shrink: 0;
 }
 
 .card-footer {
   display: flex;
   gap: 1rem;
+  margin-top: auto; /* KEY: Pushes footer to bottom */
+  flex-shrink: 0;
 }
 
 /* Skills Grid */
@@ -414,6 +433,11 @@ footer p {
     font-size: 2rem;
   }
   
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
   .contact-container {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -426,7 +450,5 @@ footer p {
   
   .card {
     padding: 2rem;
-    margin-bottom: 2rem;
   }
 }
-
